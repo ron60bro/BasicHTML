@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- 
+<script>
+    axios.get("http://localhost:3005/data").then((response)=>{ 
+        let result=response.data
+        console.log(result[0].title,"kk")
+    })
+  var one=()=>{
+    var data="";
+              
+              result.map((itemname,itemindex)=>{
+                 data=data+"<tr>";
+                  data=data+"<td>"+ itemindex.name+"</td\n>";
+                  data=data+"<td>"+ itemname.title+"</td\n>";
+                      data=data+"<td> <button onclick='delitem("+ itemindex +")'>Delete </button></td \n>"
+                  data=data+"</tr\n\n>";
+              })
+
+              alert(data);
+             document.getElementById("container").innerHTML = data;
+          }
+</script> -->
+<script>
+ var result1=[
+    {
+    "title": "Amy Schneider’s Jeopardy! Streak Ends at 40 Consecutive Wins and $1.4Million",
+    "link": "https://time.com/6142934/amy-schneider-jeopardy-streak-ends/"
+    },
+    {
+    "title": "'Writing With Fire' Shines a Light on All-Women News Outlet",
+    "link": "https://time.com/6142628/writing-with-fire-india-documentary/"
+    },
+    {
+    "title": "Moderna Booster May Wane After 6 Months",
+    "link": "https://time.com/6142852/moderna-booster-wanes-omicron/"
+    },
+    {
+    "title": "Pressure Mounts for Biden to Nominate a Black Woman to the Supreme",
+    "link":
+    
+    "https://time.com/6142743/joe-biden-supreme-court-nominee-black-woman-campaign-promise/"
+    
+    },
+    {
+    "title": "The James Webb Space Telescope Is in Position—And Now We Wait",
+    "link": "https://time.com/6142769/james-webb-space-telescope-reaches-l2/"
+    },
+    {
+    "title": "We Urgently Need a New National COVID-19 Response Plan",
+    "link": "https://time.com/6142718/we-need-new-national-covid-19-response-plan/"
+    }
+]
+console.log(result1,"rr")
+var one=()=>{
+                var data="";
+              
+                result1.map((result,index)=>{
+                   data=data+"<tr>";
+                    data=data+"<td>"+ "<h3>"+result1[index].title+"</h3>"+"</td\n>";
+                    data=data+"<td>"+ result1[index].link+"</td\n>";
+                    // data=data+"<td>"+ itemname+"</td\n>";
+                        // data=data+"<td> <button onclick='delitem("+ itemindex +")'>Delete </button></td \n>"
+                    data=data+"</tr\n\n>";
+                
+                })
+
+                alert(data);
+               document.getElementById("container").innerHTML = data;
+            }
+</script>
+
+</head>
+
+<body onload="one()">
+<ul>
+    <i class="fa fa-bars"></i><li style="color: red;"></i>TIME</li>
+   
+    <li class="you"><i class="fa fa-search" ></i><input type="search" id="gsearch" name="gsearch" placeholder="Search" style="border: none;"></li>
+</ul>
+<hr/>
+
+        
+        
+    
+
+
+    <div class="sidebar box" id="container"style="margin-top: 0px;">
+        <h2>LATEST STORIES</h2>
+        <!-- <br>
+        <P> Amy Schneider's Jeopardy!<br>Streak Ends</P>
+        <h6>JANUARY 26,2022.11:43 PM EST</h6>
+        <P>'writing' With fire' Shines<br> a Light on all-Woman News OutLet</P>
+        <h6>JANUARY 26,2022.9:00 PM EST</h6>
+        <p>Moderna Booster May<br>Wane After 6 Months</p>
+        <h6>JANUARY 26,2022.3:51 PM EST</h6>
+        <p>The James Webb Space <br>Telescope Is In The Position-<br>And Now We Wait</p>
+        <h6>JANUARY 26,2022.3:46 PM EST</h6> -->
+        
+  
+    </div>
+    <div class="sidebar-1">
+        <div class="id">
+            <i class="fa-thin fa-xmark"></i>
+            <p class="vericaltext" style="color: white;">
+               Subscribe and save 80%
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="box">
+            <h2>FEATURED VOICES</h2>
+            <br>
+            <h5>Anatol Lieven</h5>
+            <P>Russia Has Been Warning the West<br> About Ukrain for Decades</P>
+            <h5>Ismat Ara</h5>
+            <p>How it Feel to Be Muslim Woman<br> Sold by India's Right Wing</p>
+            <h5>Robert J.Davis</h5>
+            Why You Shouldn't Exercise to Loose <br>Weight
+        </div>
+    </div>
+    <br>
+    <div class="row2" >
+        <h5>Yohanca Delgado</h5>
+        <P>The life-changing pratice that will <br>Help You More Gratitude</P>
+        <h5>Ismat Ara</h5>
+        <p>How it Feel to Be Muslim Woman<br> Sold by India's Right Wing</p>
+        <h5>Robert J.Davis</h5>
+        Why You Shouldn't Exercise to Loose <br>Weight
+    </div>
+
+</body>
+
+</html>
